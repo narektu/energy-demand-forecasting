@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "energy-forecasting"
+version = "0.1.0"
+description = "Energy demand forecasting project using UCI Electricity Load Diagrams dataset"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "scikit-learn",
+    "xgboost",
+    "jupyter",
+    "pyyaml",
+    "python-dotenv",
+    "joblib"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

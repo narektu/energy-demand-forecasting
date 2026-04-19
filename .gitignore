@@ -9,4 +9,4 @@ data/processed/
 data/artifacts/
 models/trained/
 *.pyc
-.DS_Store
+.DS_Storedata/raw/
